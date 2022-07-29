@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-colour: #151515;
+        --background-colour: #242424;
+        --selection-colour: #065273;
+        --link-colour-default: #2980b9;
+        --link-colour-visited: #e6e6e6;
+        --link-colour-active: #47f390;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap");
+
+body {
+    max-height: 100%;
+    color: var(--foreground-colour);
+    background: var(--background-colour);
+    padding: 2em;
+    font-family: "Rubik", sans-serif;
+}
+
+::selection {
+    background: var(--selection-colour);
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    margin-right: 0.3em;
+    color: var(--link-colour-default);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:visited {
+    color: var(--link-colour-visited);
+}
+
+a:active {
+    color: var(--link-colour-active);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(87, 87, 87, 0.103);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(87, 87, 87);
+}
