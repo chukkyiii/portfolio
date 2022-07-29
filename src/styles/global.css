@@ -21,6 +21,7 @@ body {
     background: var(--background-colour);
     padding: 2em;
     font-family: "Rubik", sans-serif;
+    color: #e6e6e6;
 }
 
 ::selection {

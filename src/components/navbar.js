@@ -23,17 +23,14 @@ const Navbar = ({pageTitle}) => {
         <title>
           {pageTitle} | {data.site.siteMetadata.title}
         </title>
-        <header>
-          <div className="mx-auto flex items-center justify-center max-w-2xl">
+        <div>
+          <div className="mx-auto mb-9 flex items-center justify-between max-w-2xl ">
             <Icon className="w-12 h-12" />
             <nav>
-              <ul className="flex pl-32">
+              <ul className="flex">
                 {menu.map((item) => (
                   <li key={item.title}>
-                    <Link
-                      to={item.path}
-                      className="pl-8"
-                    >
+                    <Link to={item.path} className="pl-8 hover:text-amber-500">
                       {item.title}
                     </Link>
                   </li>
@@ -41,7 +38,7 @@ const Navbar = ({pageTitle}) => {
               </ul>
             </nav>
           </div>
-        </header>
+        </div>
       </main>
     );
 }
