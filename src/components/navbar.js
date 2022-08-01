@@ -25,7 +25,7 @@ const Navbar = ({pageTitle}) => {
         </title>
         <div>
           <div className="mx-auto mb-9 flex items-center justify-between max-w-2xl ">
-            <Icon className="w-12 h-12" />
+            <Icon className="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" />
             <nav>
               <ul className="flex">
                 {menu.map((item) => (
