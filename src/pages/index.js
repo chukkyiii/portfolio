@@ -93,36 +93,41 @@ const IndexPage = () => {
           </div>
         ))}
       </div>
-      <div>
-        {/* socials */}
-        <div className="mx-auto max-w-xl">
-          <h1 className="pl-3 pb-3 text-xl"> Socials: </h1>
-          <div className="mx-12">
-            {socials.map((social) => (
-              <button className="mx-auto mb-9 max-w-2xl mr-3">
-                <a href={social.url} className="text-white flex">
-                  <svg
-                    className="w-6 h-6 mt-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d={social.svg} />
-                  </svg>
-                  {/* line */}
-                  <span className="ml-2">{social.name}</span>
-                </a>
-              </button>
-            ))}
-          </div>
+      {/* socials */}
+      <div className="mx-auto max-w-xl">
+        <h1 className="pl-3 pt-3 text-xl"> I Love: </h1>
+        <div className="mx-12">
+          <p>
+            Art & photography, Listening to Music and playing the bass guitar,
+            and Gaming (of course).
+          </p>
+        </div>
+        <h1 className="pl-3 py-3 text-xl"> Socials: </h1>
+        <div className="mx-12">
+          {socials.map((social) => (
+            <button className="mx-auto mb-9 max-w-2xl mr-3">
+              <a href={social.url} className="text-white flex">
+                <svg
+                  className="w-6 h-6 mt-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d={social.svg} />
+                </svg>
+                {/* line */}
+                <span className="ml-2">{social.name}</span>
+              </a>
+            </button>
+          ))}
         </div>
       </div>
-      {/* <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-neutral-800">
-        <div className="flex flex-col items-center justify-center">
-          <p className="text-center text-sm text-gray-600"> 
-            © {new Date().getFullYear()}
-          </p>
-        </div> 
-      </footer> */} 
+      {/* <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-neutral-800"> */}
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        © {new Date().getFullYear() } {" "}
+        Jesse Doka. All rights reserved.
+      </span>
+      {/* </footer> */}
     </div>
   );
 }
