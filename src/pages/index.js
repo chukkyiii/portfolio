@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const IndexPage = () => {
   let jargon = Math.random().toString(36).substring(2, 7).concat("Is obviosly a Word");
@@ -74,12 +75,12 @@ const IndexPage = () => {
         {/* badge */}
         {projects.map((project) => (
           <div
-            class="overflow-hidden mx-3 leading-normal rounded-lg mb-4"
+            className="overflow-hidden mx-3 leading-normal rounded-lg mb-4"
             role="alert"
           >
             <p className="px-4 py-3 font-bold text-slate-100 bg-slate-800">
               {project.new_status ? (
-                <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">
+                <span className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">
                   NEW
                 </span>
               ) : null}
@@ -122,11 +123,7 @@ const IndexPage = () => {
         </div>
       </div>
       {/* <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-neutral-800"> */}
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-        © {new Date().getFullYear() } {" "}
-        Jesse Doka. All rights reserved.
-      </span>
+      <Footer />
       {/* </footer> */}
     </div>
   );

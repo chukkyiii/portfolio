@@ -1,5 +1,6 @@
 import * as React from "react"
 import Navbar from "../../components/navbar"
+import Footer from "../../components/footer"
 import { Link, graphql } from "gatsby"
 
 // markup
@@ -22,10 +23,7 @@ const BlogPage = ({ data }) => {
             </ul>
         </div>
         {/* {JSON.stringify(edges, null, 4)} */}
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © {new Date().getFullYear()} Jesse Doka. All rights reserved.
-        </span>
+        <Footer />
       </main>
     );
 }
