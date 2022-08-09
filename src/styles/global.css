@@ -51,6 +51,10 @@ a:active {
     color: var(--link-colour-active);
 }
 
+li {
+    list-style-type: none;
+}
+
 button {
     padding: 9px 25px;
     background-color: rgba(87, 87, 87, 0.103);
