@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 
