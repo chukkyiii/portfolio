@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Icon from '../images/icon.svg';
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { loading_bar } from './navbar.module.css';
 
 const Navbar = ({pageTitle}) => {
   
@@ -17,9 +18,9 @@ const Navbar = ({pageTitle}) => {
   `);
 
   const menu = [
-      { title: 'README', path:'/' },
-      { title: 'PRØJECTS', path: 'https://github.com/chukkyiii?tab=repositories' },
-      { title: 'BLØG', path: '/blog' }
+      { title: 'README', path:'/', isInternal: true },
+      { title: 'PRØJECTS', path: 'https://github.com/chukkyiii?tab=repositories', isInternal: false },
+      { title: 'BLØG', path: '/blog', isInternal: true },
   ]
 
   return (
@@ -32,7 +33,7 @@ const Navbar = ({pageTitle}) => {
         {({ open }) => (
           <>
             <div>
-              <div style={loading_bar}></div>
+              <div className={loading_bar}></div>
               <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                   <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -57,12 +58,21 @@ const Navbar = ({pageTitle}) => {
                       <div className="flex space-x-4">
                         {menu.map((item) => (
                           <li key={item.title}>
-                            <Link
-                              to={item.path}
-                              className="pl-8 hover:text-amber-500"
-                            >
-                              {item.title}
-                            </Link>
+                            {item.isInternal ? (
+                              <Link
+                                to={item.path}
+                                className="hover:text-amber-500"
+                              >
+                                {item.title}
+                              </Link>
+                            ) : (
+                              <a 
+                                href={item.path} 
+                                className="hover:text-amber-500"
+                              >
+                                {item.title}
+                              </a>
+                            )}
                           </li>
                         ))}
                       </div>
@@ -96,22 +106,3 @@ const Navbar = ({pageTitle}) => {
 }
 
 export default Navbar;
-
-{/* <div className="mx-auto mb-9 flex items-center justify-between max-w-2xl ">
-                  <Icon className="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" />
-                  <nav>
-                    <ul className="flex">
-                      {menu.map((item) => (
-                        <li key={item.title}>
-                          <Link
-                            to={item.path}
-                            className="pl-8 hover:text-amber-500"
-                          >
-                            {item.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </nav>
-                </div>
-              </div> */}
