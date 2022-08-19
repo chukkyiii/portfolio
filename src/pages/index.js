@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 const IndexPage = () => {
-  let jargon = Math.random().toString(36).substring(2, 7).concat("Is obviosly a Word");
+  let jargon = Math.random().toString(36).substring(2, 7).concat(" is obviosly a Word");
 
   // list of projects
   const projects = [
