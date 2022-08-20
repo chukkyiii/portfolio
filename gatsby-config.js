@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `WithoutTheEye`,
+    title: `3chukky`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -8,6 +8,18 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `3chukky`,
+        short_name: `3chukky`,
+        start_url: `/`,
+        background_color: `#242424`,
+        theme_color: `#242424`,
+        display: `standalone`,
+        icon: `src/images/icon.svg`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
