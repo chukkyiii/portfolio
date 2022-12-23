@@ -44,7 +44,6 @@ node *insertNode(node *root, int data) {
     }
     return root;
 }
-
 ```
 
 ### Traversing the tree
