@@ -62,8 +62,7 @@ const IndexPage = () => {
         <h1 className="text-3xl font-bold pl-3 pb-3">JESSE. DOKA.</h1>
         <p className="pl-3 pb-3">
           I'm a student currently studying a bachelors degree at Newcastle
-          University. I've always been interested in computers, and I've always
-          loved the process of creating software, from planning to building it.
+          University. I've always been interested in computers, and I've always loved the process of creating software, from planning to building it.
         </p>
         <h1 className="pl-3 pb-3 text-xl"> What I have been working on: </h1>
         {/* badge */}
@@ -91,13 +90,6 @@ const IndexPage = () => {
       </div>
       {/* socials */}
       <div className="mx-auto max-w-xl">
-        <h1 className="pl-3 pt-3 text-xl"> I Love: </h1>
-        <div className="mx-12">
-          <p>
-            Art & photography, Listening to Music and playing the bass guitar,
-            and Gaming (of course).
-          </p>
-        </div>
         <h1 className="pl-3 py-3 text-xl"> Socials: </h1>
         <div className="mx-12">
           {socials.map((social, index) => (
