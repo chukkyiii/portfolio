@@ -97,6 +97,9 @@ pre {
     font-family: "Rubik", monospace;
     font-size: 15px;
     color: #e6e6e6;
+
+    /* handle small devices */
+    overflow-x: auto;
 }
 
 ul {
