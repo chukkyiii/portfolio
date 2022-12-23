@@ -57,10 +57,11 @@ const Navbar = ({pageTitle}) => {
                     <div className="hidden sm:block sm:ml-6">
                       <div className="flex space-x-4">
                         {menu.map((item) => (
-                          <li key={item.title}>
+                          <li key={item.title} className="list-none">
                             {item.isInternal ? (
                               <Link
                                 to={item.path}
+                                // hover text-amber-500 and no list style
                                 className="hover:text-amber-500"
                               >
                                 {item.title}

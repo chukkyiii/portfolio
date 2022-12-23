@@ -8,12 +8,6 @@ const IndexPage = () => {
   // list of projects
   const projects = [
     {
-      title: "Vendor",
-      Info: "Project info coming soon",
-      url: "https://github.com/vendororg/vendor",
-      new_status: true,
-    },
-    {
       title: "Reacton",
       Info: "Reaction Benchmarking",
       url: "https://github.com/chukkyiii/reacton",

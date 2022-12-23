@@ -12,9 +12,12 @@ const BlogPost = ({ data }) => {
         <main>
             <Navbar pageTitle={mdx.frontmatter.title} />
             <div className="mx-auto max-w-xl items-center">
-                <h1 className="text-3xl font-bold pl-3 pb-3">{mdx.frontmatter.title}</h1>
+                <h1 className="text-3xl font-bold pl-3 pb-3">
+                  {mdx.frontmatter.title}
+                </h1>
+                <p className='text-sm pl-3 pb-3'>{mdx.frontmatter.date}</p>
                 <MDXProvider>
-                <MDXRenderer>{mdx.body}</MDXRenderer>
+                  <MDXRenderer>{mdx.body}</MDXRenderer>
                 </MDXProvider>
             </div>
             <Footer />

@@ -14,10 +14,10 @@ const BlogPage = ({ data }) => {
             <p className="pl-3 pb-3">
             This is a list of all the posts I have written.
             </p>
-            <ul className="pl-3 pb-3">
+            <ul className="pl-3 pb-3 list-none">
                 {edges.map(({ node }) => (
                     <li key={node.id}>
-                    <Link to={node.slug}>{node.frontmatter.title}</Link>
+                    <Link to={node.slug}>{node.frontmatter.date} | {node.frontmatter.title}</Link>
                     </li>
                 ))}
             </ul>
@@ -36,6 +36,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            date(formatString: "MMMM DD, YYYY")
           }
           slug
         }

@@ -7,7 +7,17 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [{
+          resolve: `gatsby-remark-vscode`,
+          options: {
+            theme: 'Github Dark Dimmed' // Or install your favorite theme from GitHub
+          }
+        }]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
