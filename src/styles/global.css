@@ -26,6 +26,19 @@ body {
     animation: fadein 1.5s;
 }
 
+footer {
+    /* bottom of the page */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--background-colour);
+    color: var(--foreground-colour);
+    font-size: 0.8em;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
