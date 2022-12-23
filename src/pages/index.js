@@ -109,9 +109,7 @@ const IndexPage = () => {
           ))}
         </div>
       </div>
-      {/* <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-neutral-800"> */}
       <Footer />
-      {/* </footer> */}
     </div>
   );
 }

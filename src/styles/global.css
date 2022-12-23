@@ -103,16 +103,20 @@ button:hover {
 /* code blocks */
 
 pre {
-    background: #313131;
+    background-color: var(--foreground-colour);
     border-radius: 10px;
     padding: 1em;
     margin: 1em 0;
-    font-family: "Rubik", monospace;
     font-size: 15px;
-    color: #e6e6e6;
 
     /* handle small devices */
     overflow-x: auto;
+}
+
+code {
+    font-size: 15px;
+    color: #e6e6e6;
+    font-family: "JetBrains Mono", monospace;
 }
 
 ul {
