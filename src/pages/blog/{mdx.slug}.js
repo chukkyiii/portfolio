@@ -4,24 +4,24 @@ import Footer from '../../components/footer';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
-
+              
 // markup
 const BlogPost = ({ data }) => {
-    const { mdx } = data;
-    return (
-        <main>
-            <Navbar pageTitle={mdx.frontmatter.title} />
-            <div className="mx-auto max-w-xl items-center">
-                <h1 className="text-3xl font-bold pl-3 pb-3">
-                  {mdx.frontmatter.title}
-                </h1>
-                <p className='text-sm pl-3 pb-3'>{mdx.frontmatter.date}</p>
-                <MDXProvider>
-                  <MDXRenderer>{mdx.body}</MDXRenderer>
-                </MDXProvider>
-            </div>
-            <Footer />
-        </main>
+  const { mdx } = data;
+  return (
+    <main>
+      	<Navbar pageTitle={mdx.frontmatter.title} />
+      	<div className="mx-auto max-w-xl items-center mb-3">
+        	<h1 className="text-3xl font-bold pl-3 pb-3">
+          		{mdx.frontmatter.title}
+        	</h1>
+        	<p className='text-sm pl-3 pb-3'>{mdx.frontmatter.date}</p>
+          <MDXProvider>
+				    <MDXRenderer>{mdx.body}</MDXRenderer>
+			    </MDXProvider>
+      	</div>
+      	<Footer />
+    </main>
     );
 }
 
