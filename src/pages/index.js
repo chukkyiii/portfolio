@@ -89,7 +89,7 @@ const IndexPage = () => {
         ))}
       </div>
       {/* socials */}
-      <div className="mx-auto max-w-xl">
+      <div className="mx-auto max-w-xl mb-7">
         <h1 className="pl-3 py-3 text-xl"> Socials: </h1>
         <div className="mx-12">
           {socials.map((social, index) => (

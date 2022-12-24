@@ -103,7 +103,7 @@ button:hover {
 /* code blocks */
 
 pre {
-    background-color: var(--foreground-colour);
+    /* background-color: var(--foreground-colour); */
     border-radius: 10px;
     padding: 1em;
     margin: 1em 0;
@@ -115,7 +115,7 @@ pre {
 
 code {
     font-size: 15px;
-    color: #e6e6e6;
+    /* color: #e6e6e6; */
     font-family: "JetBrains Mono", monospace;
 }
 
