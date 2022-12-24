@@ -4,14 +4,14 @@ import Footer from '../../components/footer';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
-              
+     
 // markup
 const BlogPost = ({ data }) => {
   const { mdx } = data;
   return (
     <main>
       	<Navbar pageTitle={mdx.frontmatter.title} />
-      	<div className="mx-auto max-w-xl items-center mb-3">
+      	<div className="mx-auto max-w-xl items-center sm:mb-3">
         	<h1 className="text-3xl font-bold pl-3 pb-3">
           		{mdx.frontmatter.title}
         	</h1>
