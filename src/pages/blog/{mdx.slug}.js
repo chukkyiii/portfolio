@@ -11,7 +11,7 @@ const BlogPost = ({ data }) => {
   return (
     <main>
       	<Navbar pageTitle={mdx.frontmatter.title} />
-      	<div className="mx-auto max-w-xl items-center sm:mb-3">
+      	<div className="mx-auto max-w-xl items-center mb-6">
         	<h1 className="text-3xl font-bold pl-3 pb-3">
           		{mdx.frontmatter.title}
         	</h1>
