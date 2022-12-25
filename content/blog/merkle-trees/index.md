@@ -3,7 +3,7 @@ title: "Building a Merkle Tree"
 date: 2022-12-25
 ---
 
-Based on the continuation of [Learning Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) article, this apge will show you how to build a Merkle Tree from scratch.
+Based on the continuation of Learning Blockchains by Building One article, this apge will show you how to build a Merkle Tree from scratch.
 
 Merkle trees are a data structure that can be used to verify the integrity of a large set of data. They are used in many applications, including blockchains, file systems, and distributed storage systems.
 
@@ -220,6 +220,7 @@ We can now create a merkle tree. We can also get the root node of the tree. This
 ## Resources
 
 [Merkle tree Wiki](https://en.wikipedia.org/wiki/Merkle_tree)
+
 [Learning Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
 
 
