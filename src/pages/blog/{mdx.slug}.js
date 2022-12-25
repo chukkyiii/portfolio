@@ -11,7 +11,7 @@ const BlogPost = ({ data }) => {
   return (
     <main>
       	<Navbar pageTitle={mdx.frontmatter.title} />
-      	<div className="mx-auto max-w-xl items-center mb-6">
+      	<div className="mx-auto max-w-2xl items-center mb-6">
         	<h1 className="text-3xl font-bold pl-3 pb-3">
           		{mdx.frontmatter.title}
         	</h1>
@@ -22,7 +22,7 @@ const BlogPost = ({ data }) => {
       	</div>
       	<Footer />
     </main>
-    );
+  );
 }
 
 export const query = graphql`
