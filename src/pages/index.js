@@ -64,50 +64,6 @@ const IndexPage = () => {
           I'm a student currently studying a bachelors degree at Newcastle
           University. I've always been interested in computers, and I've always loved the process of creating software, from planning to building it.
         </p>
-        <h1 className="pl-3 pb-3 text-xl"> What I have been working on: </h1>
-        {/* badge */}
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="overflow-hidden mx-3 leading-normal rounded-lg mb-4"
-            role="alert"
-          >
-            <p className="px-4 py-3 font-bold text-slate-100 bg-slate-800">
-              {project.new_status ? (
-                <span className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">
-                  NEW
-                </span>
-              ) : null}
-              <a href={project.url} className="text-white">
-                {project.title}
-              </a>
-            </p>
-            <p className="px-4 py-3 text-slate-700 bg-slate-100">
-              {project.Info}
-            </p>
-          </div>
-        ))}
-      </div>
-      {/* socials */}
-      <div className="mx-auto max-w-xl">
-        <h1 className="pl-3 py-3 text-xl"> Socials: </h1>
-        <div className="mx-12">
-          {socials.map((social, index) => (
-            <button key={index} className="mx-auto mb-9 max-w-2xl mr-3">
-              <a href={social.url} className="text-white flex">
-                <svg
-                  className="w-6 h-6 mt-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d={social.svg} />
-                </svg>
-                {/* line */}
-                <span className="ml-2">{social.name}</span>
-              </a>
-            </button>
-          ))}
-        </div>
       </div>
       <Footer />
     </div>
