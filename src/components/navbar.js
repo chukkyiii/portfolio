@@ -21,7 +21,6 @@ const Navbar = ({pageTitle}) => {
       { title: 'README', path:'/', isInternal: true },
       { title: 'PRØJECTS', path: 'https://github.com/chukkyiii?tab=repositories', isInternal: false },
       { title: 'BLØG', path: '/blog', isInternal: true },
-      { title: 'PHØTØS', path: '/photos', isInternal: true },
   ]
 
   return (
