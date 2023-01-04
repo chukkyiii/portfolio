@@ -21,6 +21,7 @@ const Navbar = ({pageTitle}) => {
       { title: 'README', path:'/', isInternal: true },
       { title: 'PRØJECTS', path: 'https://github.com/chukkyiii?tab=repositories', isInternal: false },
       { title: 'BLØG', path: '/blog', isInternal: true },
+      { title: 'PHØTØS', path: '/photos', isInternal: true },
   ]
 
   return (
@@ -34,7 +35,7 @@ const Navbar = ({pageTitle}) => {
           <>
             <div>
               <div className={loading_bar}></div>
-              <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+              <div className="mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                   <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     {/* Mobile menu button*/}
